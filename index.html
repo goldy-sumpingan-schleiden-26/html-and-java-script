@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Start Screen -->
+  <div id="start-screen">
+    <div class="game-title">QUIZ GAME</div>
+    <div class="subtitle">
+      15 Questions • Science • Math • English<br><br>
+      Test your knowledge and get the highest score!<br><br>
+      💜 Good luck, player! 💜
+    </div>
+    <button class="btn" id="start-btn">Start Game</button>
+  </div>
+
+  <!-- Quiz Screen -->
+  <div id="quiz-screen">
+    <div class="progress-bar"><div class="progress" id="progress"></div></div>
+    <div id="live-score">Score: 0</div>
+    <div id="timer">Time: 10s</div>
+    <h2 id="question"></h2>
+    <div id="answer-buttons"></div>
+    <button id="next-btn" class="btn">Next</button>
+  </div>
+
+  <!-- Background Music -->
+  <audio id="bg-music" loop>
+    <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_6b5a6dfc92.mp3?filename=retro-video-game-11292.mp3" type="audio/mpeg">
+  </audio>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
